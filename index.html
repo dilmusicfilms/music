@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>DIL MUSIC FILMS | Music, Film &amp; Digital Creative Studio</title>
+  <meta name="description" content="DIL MUSIC FILMS creates music, cinematic films, music videos, advertisements, video editing and digital visual content." />
+  <meta name="keywords" content="music production, filmmaking, music videos, video editing, AI video, advertising, photography, graphic design, DIL MUSIC FILMS" />
+  <meta name="author" content="DIL MUSIC FILMS" />
+  <link rel="canonical" href="https://www.yourdomain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DIL MUSIC FILMS | Where Music Meets Cinema" />
+  <meta property="og:description" content="Music • Films • Visual Stories • Digital Creativity" />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+  <meta property="og:url" content="https://www.yourdomain.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DIL MUSIC FILMS | Where Music Meets Cinema" />
+  <meta name="twitter:description" content="Music • Films • Visual Stories • Digital Creativity" />
+  <meta name="twitter:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+<base target="_blank">
+</head>
+<body>
+
+  <!-- ================================================================
+       PRELOADER
+  ================================================================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__logo">DIL</div>
+      <div class="preloader__sub">MUSIC&nbsp;FILMS</div>
+      <div class="preloader__bar"><span class="preloader__progress" id="preloaderProgress"></span></div>
+    </div>
+  </div>
+
+  <!-- Film grain overlay (site-wide, subtle) -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ================================================================
+       NAVIGATION
+  ================================================================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="DIL MUSIC FILMS — Home">
+        <span class="nav__logo-main">DIL</span>
+        <span class="nav__logo-sub">MUSIC FILMS</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary navigation">
+        <a href="#home" class="nav__link is-active">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#music" class="nav__link">Music</a>
+        <a href="#films" class="nav__link">Films</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--gold nav__cta">Let's Create</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================================================================
+         SECTION 01 — HERO
+         REPLACE:  Put your cinematic hero video in assets/videos/hero.mp4
+                   and uncomment the <video> block below, or replace the
+                   .hero__bg div background image in style.css.
+    ================================================================= -->
+    <section class="hero" id="home">
+      <!--
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+        <source src="assets/videos/hero.mp4" type="video/mp4" />
+      </video>
+      -->
+      <div class="hero__bg" role="img" aria-label="Cinematic recording studio with microphone and film lights"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__label reveal-line"><span>MUSIC &nbsp;•&nbsp; FILM &nbsp;•&nbsp; CREATIVITY</span></p>
+        <h1 class="hero__title">
+          <span class="reveal-line"><span>DIL</span></span>
+          <span class="reveal-line"><span class="gold">MUSIC FILMS</span></span>
+        </h1>
+        <div class="hero__divider" aria-hidden="true"><span></span><i></i><span></span></div>
+        <p class="hero__tagline">WHERE MUSIC MEETS CINEMA</p>
+        <p class="hero__desc">Turning sound, emotion and imagination into unforgettable visual experiences.</p>
+        <div class="hero__buttons">
+          <a href="#portfolio" class="btn btn--gold">Explore My Work <span class="btn__arrow">&rarr;</span></a>
+          <a href="#showreel" class="btn btn--ghost js-open-video" data-embed="">Watch Showreel <span class="btn__play">&#9658;</span></a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-line"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ================================================================
+         SECTION 02 — ABOUT
+         REPLACE:  Put your portrait / studio photo in assets/images/about.jpg
+    ================================================================= -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="about__img frame-gold" role="img" aria-label="Portrait of the creative director in a studio"></div>
+          <div class="about__badge">
+            <span class="about__badge-num">DIL</span>
+            <span class="about__badge-text">Creative<br/>Studio</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section__label reveal">About</p>
+          <h2 class="section__title reveal">ABOUT <span class="gold">DIL MUSIC FILMS</span></h2>
+          <p class="section__subtitle reveal">Creative Vision. Cinematic Storytelling.</p>
+          <p class="reveal">DIL MUSIC FILMS is a creative digital media brand focused on music, filmmaking and visual storytelling. From music covers and cinematic videos to advertising, editing and digital content, every project is created with passion, emotion and attention to detail.</p>
+          <p class="reveal">Our goal is simple — transform ideas into powerful visual and musical experiences.</p>
+
+          <div class="stats">
+            <div class="stat reveal">
+              <span class="stat__num" data-count="100" data-suffix="+">0</span>
+              <span class="stat__label">Creative Projects</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="50" data-suffix="+">0</span>
+              <span class="stat__label">Music Productions</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="100" data-suffix="K+">0</span>
+              <span class="stat__label">Digital Views</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat__num" data-count="100" data-suffix="%">0</span>
+              <span class="stat__label">Creative Passion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 03 — SERVICES
+    ================================================================= -->
+    <section class="section services" id="services">
+      <div class="container">
+        <p class="section__label reveal">What We Do</p>
+        <h2 class="section__title reveal">CREATIVE <span class="gold">SERVICES</span></h2>
+        <p class="section__subtitle reveal">Everything you need to turn your ideas into powerful digital experiences.</p>
+
+        <div class="services__grid">
+          <!-- Service card -->
+          <article class="service-card reveal">
+            <span class="service-card__num">01</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18V6l10-2v11"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="15" r="2.5"/></svg>
+            </div>
+            <h3>MUSIC PRODUCTION</h3>
+            <p>Recording, music covers, vocal production and creative audio projects.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">02</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 10l7-4v12l-7-4"/></svg>
+            </div>
+            <h3>FILM MAKING</h3>
+            <p>Short films, cinematic storytelling, concept videos and commercial productions.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">03</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v10"/><path d="M8 7l4-4 4 4"/><rect x="3" y="14" width="18" height="7" rx="2"/></svg>
+            </div>
+            <h3>MUSIC VIDEOS</h3>
+            <p>Professional cinematic music video production and visual storytelling.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">04</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h4M7 13h7M7 17h3"/><path d="M16 8l3 4-3 4"/></svg>
+            </div>
+            <h3>VIDEO EDITING</h3>
+            <p>Creative editing, color grading, transitions, motion graphics and post-production.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">05</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.2 5.6L20 10l-5.8 2.4L12 18l-2.2-5.6L4 10l5.8-2.4L12 2z"/><path d="M19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16z"/></svg>
+            </div>
+            <h3>AI VIDEO PRODUCTION</h3>
+            <p>Modern AI-powered advertising, cinematic scenes and digital storytelling.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">06</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M7 13v5a2 2 0 002 2h1"/><path d="M17 8a4 4 0 010 8"/></svg>
+            </div>
+            <h3>ADVERTISING CONTENT</h3>
+            <p>Social media advertisements, business promotional videos and brand campaigns.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">07</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l2-3h4l2 3"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+            </div>
+            <h3>PHOTOGRAPHY</h3>
+            <p>Creative portraits, promotional photography and cinematic visual content.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-card__num">08</span>
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+            </div>
+            <h3>GRAPHIC DESIGN</h3>
+            <p>Posters, thumbnails, social media creatives and promotional designs.</p>
+            <a href="#contact" class="service-card__link">Learn More <span>&rarr;</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 04 — MUSIC
+         REPLACE:  Put album cover images in assets/images/ and audio files
+                   in assets/audio/. Add YouTube URLs in data-youtube.
+    ================================================================= -->
+    <section class="section music" id="music">
+      <div class="container">
+        <p class="section__label reveal">Discography</p>
+        <h2 class="section__title reveal"><span class="gold">MUSIC</span></h2>
+        <p class="section__subtitle reveal">Feel the Sound.</p>
+
+        <div class="music__grid">
+          <article class="music-card reveal" data-audio="assets/audio/track-01.mp3">
+            <div class="music-card__cover cover-1">
+              <button class="music-card__play" aria-label="Play Adara Mal Pawane">
+                <span class="icon-play">&#9658;</span><span class="icon-pause">&#10074;&#10074;</span>
+              </button>
+              <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="music-card__info">
+              <h3>Adara Mal Pawane</h3>
+              <p class="music-card__artist">Cover by Dilka Chamod</p>
+              <p class="music-card__desc">A soulful acoustic cover with cinematic vocal layers.</p>
+              <a class="music-card__yt" href="[YOUTUBE URL]" target="_blank" rel="noopener">Watch on YouTube <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="music-card reveal" data-audio="assets/audio/track-02.mp3">
+            <div class="music-card__cover cover-2">
+              <button class="music-card__play" aria-label="Play Hitha Langa Hinahuna">
+                <span class="icon-play">&#9658;</span><span class="icon-pause">&#10074;&#10074;</span>
+              </button>
+              <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="music-card__info">
+              <h3>Hitha Langa Hinahuna</h3>
+              <p class="music-card__artist">Cover by Dilka Chamod</p>
+              <p class="music-card__desc">Emotional reinterpretation built on warm piano and strings.</p>
+              <a class="music-card__yt" href="[YOUTUBE URL]" target="_blank" rel="noopener">Watch on YouTube <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="music-card reveal" data-audio="assets/audio/track-03.mp3">
+            <div class="music-card__cover cover-3">
+              <button class="music-card__play" aria-label="Play Sanda Tharu Mal">
+                <span class="icon-play">&#9658;</span><span class="icon-pause">&#10074;&#10074;</span>
+              </button>
+              <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="music-card__info">
+              <h3>Sanda Tharu Mal</h3>
+              <p class="music-card__artist">Cover by Dilka Chamod</p>
+              <p class="music-card__desc">A moonlit ballad with modern cinematic production.</p>
+              <a class="music-card__yt" href="[YOUTUBE URL]" target="_blank" rel="noopener">Watch on YouTube <span>&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="music-card reveal" data-audio="assets/audio/track-04.mp3">
+            <div class="music-card__cover cover-4">
+              <button class="music-card__play" aria-label="Play Nube Suwadai">
+                <span class="icon-play">&#9658;</span><span class="icon-pause">&#10074;&#10074;</span>
+              </button>
+              <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="music-card__info">
+              <h3>Nube Suwadai</h3>
+              <p class="music-card__artist">Original • DIL MUSIC FILMS</p>
+              <p class="music-card__desc">An original composition blending ambient textures and melody.</p>
+              <a class="music-card__yt" href="[YOUTUBE URL]" target="_blank" rel="noopener">Watch on YouTube <span>&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a href="[YOUTUBE CHANNEL URL]" target="_blank" rel="noopener" class="btn btn--ghost">View All Music <span class="btn__arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 05 — FILMS
+         REPLACE:  Replace thumbnails in assets/images/films/ and set
+                   data-embed="https://www.youtube.com/embed/VIDEO_ID"
+    ================================================================= -->
+    <section class="section films" id="films">
+      <div class="container">
+        <p class="section__label reveal">Cinema</p>
+        <h2 class="section__title reveal">FILMS &amp; <span class="gold">VISUAL STORIES</span></h2>
+        <p class="section__subtitle reveal">Stories told through light, sound and emotion.</p>
+
+        <div class="films__grid">
+          <article class="film-card film-card--wide reveal js-open-video" data-embed="" tabindex="0" role="button" aria-label="Play Echoes of Silence">
+            <div class="film-card__thumb thumb-1"><span class="film-card__play">&#9658;</span></div>
+            <div class="film-card__meta">
+              <div><h3>Echoes of Silence</h3><p>A short film about memory, loss and the sounds we carry with us.</p></div>
+              <span class="film-card__tag">Short Film • 2025</span>
+            </div>
+          </article>
+
+          <article class="film-card reveal js-open-video" data-embed="" tabindex="0" role="button" aria-label="Play Midnight Frequencies">
+            <div class="film-card__thumb thumb-2"><span class="film-card__play">&#9658;</span></div>
+            <div class="film-card__meta">
+              <div><h3>Midnight Frequencies</h3><p>Cinematic music video shot in one continuous night.</p></div>
+              <span class="film-card__tag">Music Video • 2025</span>
+            </div>
+          </article>
+
+          <article class="film-card reveal js-open-video" data-embed="" tabindex="0" role="button" aria-label="Play The Last Take">
+            <div class="film-card__thumb thumb-3"><span class="film-card__play">&#9658;</span></div>
+            <div class="film-card__meta">
+              <div><h3>The Last Take</h3><p>Behind the camera — a story about obsession and craft.</p></div>
+              <span class="film-card__tag">Short Film • 2024</span>
+            </div>
+          </article>
+
+          <article class="film-card film-card--wide reveal js-open-video" data-embed="" tabindex="0" role="button" aria-label="Play Neon Dreams">
+            <div class="film-card__thumb thumb-4"><span class="film-card__play">&#9658;</span></div>
+            <div class="film-card__meta">
+              <div><h3>Neon Dreams</h3><p>An AI-assisted cinematic journey through a city that never sleeps.</p></div>
+              <span class="film-card__tag">AI Cinematic • 2026</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 06 — SHOWREEL
+         REPLACE:  Set data-embed to your showreel YouTube/Vimeo embed URL,
+                   or a direct .mp4 URL handled by the video modal in script.js
+    ================================================================= -->
+    <section class="showreel" id="showreel">
+      <div class="showreel__bg" aria-hidden="true"></div>
+      <div class="showreel__inner reveal">
+        <button class="showreel__btn js-open-video" data-embed="" aria-label="Play showreel">
+          <span class="showreel__ring" aria-hidden="true"></span>
+          <span class="showreel__triangle" aria-hidden="true">&#9658;</span>
+        </button>
+        <h2 class="showreel__title">WATCH <span class="gold">SHOWREEL</span></h2>
+        <p class="showreel__sub">A glimpse into the world of DIL MUSIC FILMS.</p>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 07 — PORTFOLIO
+         REPLACE:  Swap the CSS gradient thumbnails for real images:
+                   <img src="assets/images/portfolio/xx.jpg" loading="lazy" alt="...">
+    ================================================================= -->
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <p class="section__label reveal">Portfolio</p>
+        <h2 class="section__title reveal">SELECTED <span class="gold">WORK</span></h2>
+        <p class="section__subtitle reveal">A collection of music, film and digital creativity.</p>
+
+        <div class="filters reveal" role="group" aria-label="Portfolio filters">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="music">Music</button>
+          <button class="filter-btn" data-filter="films">Films</button>
+          <button class="filter-btn" data-filter="editing">Video Editing</button>
+          <button class="filter-btn" data-filter="ai">AI Videos</button>
+          <button class="filter-btn" data-filter="ads">Advertisement</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="portfolio__grid" id="portfolioGrid">
+          <article class="p-item" data-category="music" tabindex="0">
+            <div class="p-item__thumb ph-1"></div>
+            <div class="p-item__overlay"><h3>Adara Mal Pawane</h3><p>Music • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="films" tabindex="0">
+            <div class="p-item__thumb ph-2"></div>
+            <div class="p-item__overlay"><h3>Echoes of Silence</h3><p>Films • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="editing" tabindex="0">
+            <div class="p-item__thumb ph-3"></div>
+            <div class="p-item__overlay"><h3>Brand Launch Edit</h3><p>Video Editing • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="ai" tabindex="0">
+            <div class="p-item__thumb ph-4"></div>
+            <div class="p-item__overlay"><h3>Neon Dreams</h3><p>AI Videos • 2026</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="ads" tabindex="0">
+            <div class="p-item__thumb ph-5"></div>
+            <div class="p-item__overlay"><h3>Cafe Promo Spot</h3><p>Advertisement • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="design" tabindex="0">
+            <div class="p-item__thumb ph-6"></div>
+            <div class="p-item__overlay"><h3>Concert Poster Series</h3><p>Design • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="music" tabindex="0">
+            <div class="p-item__thumb ph-7"></div>
+            <div class="p-item__overlay"><h3>Sanda Tharu Mal</h3><p>Music • 2024</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="films" tabindex="0">
+            <div class="p-item__thumb ph-8"></div>
+            <div class="p-item__overlay"><h3>The Last Take</h3><p>Films • 2024</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="ai" tabindex="0">
+            <div class="p-item__thumb ph-9"></div>
+            <div class="p-item__overlay"><h3>Dreamscapes Vol.1</h3><p>AI Videos • 2026</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="ads" tabindex="0">
+            <div class="p-item__thumb ph-10"></div>
+            <div class="p-item__overlay"><h3>Fashion Reel Campaign</h3><p>Advertisement • 2026</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="editing" tabindex="0">
+            <div class="p-item__thumb ph-11"></div>
+            <div class="p-item__overlay"><h3>Wedding Film Cut</h3><p>Video Editing • 2025</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+          <article class="p-item" data-category="design" tabindex="0">
+            <div class="p-item__thumb ph-12"></div>
+            <div class="p-item__overlay"><h3>Album Artwork</h3><p>Design • 2024</p><span class="p-item__arrow">&rarr;</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 08 — CREATIVE PROCESS
+    ================================================================= -->
+    <section class="section process" id="process">
+      <div class="container">
+        <p class="section__label reveal">How We Work</p>
+        <h2 class="section__title reveal">FROM <span class="gold">IDEA TO SCREEN</span></h2>
+
+        <div class="process__line" aria-hidden="true"><span id="processLineFill"></span></div>
+
+        <div class="process__steps">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <h3>IDEA</h3>
+            <p>Understanding the story, vision and creative goal.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">02</span>
+            <h3>CONCEPT</h3>
+            <p>Developing the visual direction, music and storytelling style.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">03</span>
+            <h3>CREATE</h3>
+            <p>Recording, filming, designing and producing the project.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step__num">04</span>
+            <h3>DELIVER</h3>
+            <p>Editing, polishing and delivering the final cinematic experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 09 — WHY CHOOSE US
+    ================================================================= -->
+    <section class="section why" id="why">
+      <div class="container">
+        <p class="section__label reveal">The Difference</p>
+        <h2 class="section__title reveal">WHY <span class="gold">DIL MUSIC FILMS?</span></h2>
+
+        <div class="why__grid">
+          <div class="why__item reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 5v14M17 5v14"/></svg>
+            </div>
+            <h3>Cinematic Quality</h3>
+            <p>Every frame is composed like a film — lighting, color and motion working together.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a4 4 0 014 4c2 1 3 2.5 3 5 0 3-3 6-7 6s-7-3-7-6c0-2.5 1-4 3-5a4 4 0 014-4z"/><path d="M12 21v-4"/></svg>
+            </div>
+            <h3>Creative Storytelling</h3>
+            <p>We don't just produce content — we craft stories that people feel and remember.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            </div>
+            <h3>Modern Technology</h3>
+            <p>AI tools, modern editing workflows and current platforms — used with artistic intent.</p>
+          </div>
+          <div class="why__item reveal">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9-9c-1.5-3.5 1-7 4.5-7 2 0 3.5 1 4.5 2.5C13 6 14.5 5 16.5 5c3.5 0 6 3.5 4.5 7-2 4.5-9 9-9 9z"/></svg>
+            </div>
+            <h3>Passion for Every Project</h3>
+            <p>From a single cover song to a full production — every project gets full creative energy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 10 — TESTIMONIALS
+    ================================================================= -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <p class="section__label reveal">Testimonials</p>
+        <h2 class="section__title reveal">WHAT <span class="gold">CLIENTS SAY</span></h2>
+
+        <div class="slider reveal" id="testimonialSlider">
+          <div class="slider__track" id="sliderTrack">
+            <figure class="t-card">
+              <div class="t-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>"The music video exceeded everything we imagined. Cinematic, emotional and delivered on time."</blockquote>
+              <figcaption>
+                <span class="t-card__avatar" aria-hidden="true">K</span>
+                <div><strong>Kasun Silva</strong><span>Recording Artist</span></div>
+              </figcaption>
+            </figure>
+            <figure class="t-card">
+              <div class="t-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>"Our advertisement tripled engagement within two weeks. Professional from concept to delivery."</blockquote>
+              <figcaption>
+                <span class="t-card__avatar" aria-hidden="true">D</span>
+                <div><strong>Dilini Fernando</strong><span>Business Owner</span></div>
+              </figcaption>
+            </figure>
+            <figure class="t-card">
+              <div class="t-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>"Working with DIL MUSIC FILMS felt like working with a full film studio. Incredible attention to detail."</blockquote>
+              <figcaption>
+                <span class="t-card__avatar" aria-hidden="true">R</span>
+                <div><strong>Ravindu Perera</strong><span>Event Organizer</span></div>
+              </figcaption>
+            </figure>
+            <figure class="t-card">
+              <div class="t-card__stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote>"The cover production quality is outstanding. Warm vocals, beautiful mix, stunning visuals."</blockquote>
+              <figcaption>
+                <span class="t-card__avatar" aria-hidden="true">S</span>
+                <div><strong>Sithum Jayasinghe</strong><span>Singer</span></div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__btn" id="sliderPrev" aria-label="Previous testimonial">&#8592;</button>
+            <div class="slider__dots" id="sliderDots" role="tablist" aria-label="Testimonial navigation"></div>
+            <button class="slider__btn" id="sliderNext" aria-label="Next testimonial">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 11 — SOCIAL / YOUTUBE
+         REPLACE:  Put your real social URLs in the href attributes below.
+    ================================================================= -->
+    <section class="section social" id="social">
+      <div class="container">
+        <p class="section__label reveal">Community</p>
+        <h2 class="section__title reveal">FOLLOW THE <span class="gold">JOURNEY</span></h2>
+        <p class="section__subtitle reveal">Music, films, behind-the-scenes moments and new creative projects.</p>
+
+        <div class="social__grid">
+          <a class="social-card reveal" href="[YOUTUBE URL]" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.3-1C16.6 4 12 4 12 4s-4.6 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.2 7.6.2s4.6 0 7.8-.2c.4-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.8 15.1V8.4l6.2 3.4-6.2 3.3z"/></svg>
+            <h3>YouTube</h3><p>Music videos, films &amp; showreels</p>
+          </a>
+          <a class="social-card reveal" href="[FACEBOOK URL]" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.6V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.8V14h2.7v8h3z"/></svg>
+            <h3>Facebook</h3><p>Updates &amp; community</p>
+          </a>
+          <a class="social-card reveal" href="[INSTAGRAM URL]" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>
+            <h3>Instagram</h3><p>Behind the scenes &amp; visuals</p>
+          </a>
+          <a class="social-card reveal" href="[TIKTOK URL]" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.4 2 1.8 3.5 3.9 3.8v3c-1.5 0-2.9-.5-3.9-1.2v6.2c0 3.6-2.7 6.2-6.2 6.2A6.1 6.1 0 013 14.9c0-3.4 2.8-6.1 6.3-6.1.3 0 .7 0 1 .1v3.1c-.3-.1-.7-.2-1-.2a3 3 0 00-3.1 3.1 3 3 0 003.1 3.1 3 3 0 003.1-3.1V3h3.2z"/></svg>
+            <h3>TikTok</h3><p>Short-form creativity</p>
+          </a>
+        </div>
+
+        <div class="center reveal">
+          <a href="[YOUTUBE URL]" target="_blank" rel="noopener" class="btn btn--gold">Subscribe &amp; Follow</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 12 — CONTACT CTA
+    ================================================================= -->
+    <section class="cta">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner reveal">
+        <h2 class="cta__kicker">HAVE AN IDEA?</h2>
+        <p class="cta__headline">LET'S CREATE SOMETHING <span class="gold">UNFORGETTABLE.</span></p>
+        <p class="cta__desc">Whether it's music, film, advertising or digital content, let's turn your idea into reality.</p>
+        <div class="cta__buttons">
+          <a href="#contact" class="btn btn--gold">Start a Project <span class="btn__arrow">&rarr;</span></a>
+          <a href="https://wa.me/[YOUR WHATSAPP NUMBER]" target="_blank" rel="noopener" class="btn btn--ghost">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SECTION 13 — CONTACT
+         REPLACE:  [YOUR EMAIL], [YOUR WHATSAPP], [YOUR LOCATION] below.
+    ================================================================= -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section__label reveal">Contact</p>
+        <h2 class="section__title reveal">LET'S WORK <span class="gold">TOGETHER</span></h2>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="info-card reveal">
+              <span class="info-card__label">Email</span>
+              <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__label">Phone</span>
+              <a href="tel:[YOUR PHONE]">[YOUR WHATSAPP]</a>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__label">WhatsApp</span>
+              <a href="https://wa.me/[YOUR WHATSAPP NUMBER]" target="_blank" rel="noopener">Chat with us directly</a>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__label">Location</span>
+              <p>[YOUR LOCATION]</p>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__label">Social Media</span>
+              <div class="info-card__socials">
+                <a href="[YOUTUBE URL]" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+                <a href="[FACEBOOK URL]" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+                <a href="[INSTAGRAM URL]" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                <a href="[TIKTOK URL]" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cfName">Your Name</label>
+                <input type="text" id="cfName" name="name" autocomplete="name" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="cfEmail">Email Address</label>
+                <input type="email" id="cfEmail" name="email" autocomplete="email" required />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cfPhone">Phone / WhatsApp</label>
+                <input type="tel" id="cfPhone" name="phone" autocomplete="tel" />
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+              <div class="form-field">
+                <label for="cfType">Project Type</label>
+                <select id="cfType" name="type" required>
+                  <option value="" selected disabled>Select a project type</option>
+                  <option>Music Production</option>
+                  <option>Music Video</option>
+                  <option>Film Production</option>
+                  <option>Video Editing</option>
+                  <option>AI Advertisement</option>
+                  <option>Graphic Design</option>
+                  <option>Photography</option>
+                  <option>Other</option>
+                </select>
+                <span class="form-error" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cfMsg">Message</label>
+              <textarea id="cfMsg" name="message" rows="5" required></textarea>
+              <span class="form-error" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn--gold form__submit">Send Message <span class="btn__arrow">&rarr;</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo"><span>DIL</span> MUSIC FILMS</a>
+        <p>Where Music Meets Cinema.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#music">Music</a>
+        <a href="#films">Films</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__socials">
+        <a href="[YOUTUBE URL]" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+        <a href="[FACEBOOK URL]" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+        <a href="[INSTAGRAM URL]" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="[TIKTOK URL]" target="_blank" rel="noopener" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 DIL MUSIC FILMS. All Rights Reserved.</p>
+      <p>Designed with passion for music &amp; cinema.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">&#8593;</button>
+
+  <!-- ================================================================
+       VIDEO MODAL
+       Works with: YouTube/Vimeo embed URLs in data-embed, OR direct
+       .mp4 files (add data-mp4="assets/videos/xyz.mp4").
+  ================================================================= -->
+  <div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal aria-label="Close video">&times;</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
